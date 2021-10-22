@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+          body {
+               text-align: center;
+               font-family: 'Roboto', sans-serif;
+          }
+
+          input {
+               border-radius: 5px;
+          }
+
+          input:hover {
+               text-decoration: underline;
+          }
+
+          .recuadro {
+               border: black;
+               border-style: solid;
+               padding: 8px;
+               border-width: 1px;
+               margin: 7px;
+          }
+
+     </style>
+     
+</head>
+<body>
+     <h1>PRACTICO 6 (ARRAYS)</h1>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 1 - Normal</h2>
+     <h3>Crear un array con los largos del array cargado</h3>
+     <div>
+          <label for="txtPalabraIngresadaE1a"></label>
+          <input type="text" id="txtPalabraIngresadaE1a" placeholder="...">
+          <input type="button" id="btnAgregarPalabraE1a" value="Agregar palabra">
+          <br><br>
+          <input type="button" value="Mostrar resultado" id="btnE1a">
+          <br><br>
+          <div id="resE1a"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 1 - Con map</h2>
+     <h3>Crear un array con los largos del array cargado</h3>
+     <div>
+          <label for="txtPalabraIngresadaE1b"></label>
+          <input type="text" id="txtPalabraIngresadaE1b" placeholder="...">
+          <input type="button" id="btnAgregarPalabraE1b" value="Agregar palabra">
+          <br><br>
+          <input type="button" value="Mostrar resultado" id="btnE1b">
+          <br><br>
+          <div id="resE1b"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 2</h2>
+     <h3>Ingresar valores numéricos en un array a partir de un campo de texto y un botón. Presionando otro botón mostrar en pantalla el mayor número.</h3>
+     <div>
+          <label for="txtE2">Ingrese un numero: </label>
+          <input type="text" id="txtE2" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarValorE2" value="Agregar valor">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE2" value="Mostrar resultado">
+          <br><br>
+          <div id="resE2"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 3</h2>
+     <h3>Ingresar palabras e ir incorporándolas a un array indexado mediante un botón. Para finalizar presionar otro botón y mostrar un listado con todas las palabras almacenadas en ese array.</h3>
+     <div>
+          <label for="txtE3">Ingrese un texto: </label>
+          <input type="text" id="txtE3" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarPalabraE3" value="Agregar palabra">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE3" value="Mostrar resultado">
+          <br><br>
+          <div id="resE3"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 4</h2>
+     <h3>Ingresar números e ir incorporándolos a un array indexado mediante un botón. Para finalizar presionar otro botón y calcular el promedio de todos los números ingresados.</h3>
+     <div>
+          <label for="txtE4">Ingrese un numero: </label>
+          <input type="text" id="txtE4" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarValorE4" value="Agregar valor">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE4" value="Mostrar resultado">
+          <br><br>
+          <div id="resE4"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 5</h2>
+     <h3>Crear una función que reciba como parámetro un array con valores numéricos y devuelva un nuevo array solamente con los valores mayores a 20.</h3>
+     <div>
+          <label for="txtE5">Ingrese un numero: </label>
+          <input type="text" id="txtE5" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarValorE5" value="Agregar valor">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE5" value="Mostrar resultado">
+          <br><br>
+          <div id="resE5"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 6-a</h2>
+     <h3>Una empresa necesita almacenar los alias (nombres de usuario) de red de sus empleados. Luego de cada ingreso mostrar todos los usuarios ingresados hasta el momento.</h3>
+     <div>
+          <label for="txtE6a">Ingrese un alias: </label>
+          <input type="text" id="txtE6a" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarPalabraE6a" value="Agregar valor">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE6a" value="Mostrar resultado">
+          <br><br>
+          <div id="resE6a"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 6-b</h2>
+     <h3>Una empresa necesita almacenar los alias (nombres de usuario) de red de sus empleados. Luego de cada ingreso mostrar todos los usuarios ingresados hasta el momento.</h3>
+     <div>
+          <label for="txtE6b">Ingrese un numero: </label>
+          <input type="text" id="txtE6b" placeholder="...">
+          <br><br>
+          <input type="button" id="btnAgregarPalabraE6b" value="Agregar valor">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE6b" value="Mostrar resultado">
+          <br><br>
+          <div id="resE6b"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 7-a-b</h2>
+     <h3>
+          a) Crear un campo de texto y un botón para ingresar nombres a un array. Con cada ingreso mostrar todos los elementos, uno por línea y al final mostrar la cantidad de elementos que tiene el array<br>
+          b) Crear un nuevo campo de texto y otro botón para ingresar en el campo de texto un número de posición y mostrar en un párrafo el elemento que se encuentra en esa posición. Además en otro párrafo mostrar el último elemento del array.<br>
+          c) Crear dos campos de texto para nombre a buscar y nuevo nombre y al presionar un botón buscar si ese elemento existe y en caso que exista sustituir el elemento buscado por el nuevo, sino informar que no existe ese elemento, en ese caso el nombre nuevo no se utilizará.
+     </h3>
+     <div class="recuadro">
+          <div>
+               <h3>Parte A</h3>
+               <label for="txtE7a">Ingrese un nombre: </label>
+               <input type="text" id="txtE7a" placeholder="...">
+               <br><br>
+               <input type="button" id="btnAgregarNombreE7a" value="Agregar valor">
+               <br><br>
+               <input type="button" id="btnMostrarResultadoE7a" value="Mostrar resultado">
+               <br><br>
+               <div id="resE7a"></div>
+               <br>
+          </div>
+
+          <!-- PARTE B -->
+          <div>
+               <h3>Parte B</h3>
+               <label for="txtE7b">Ingrese un numero: </label>
+               <input type="text" id="txtE7b" placeholder="...">
+               <br><br>
+               <input type="button" id="btnMostrarNombreIndicadoE7b" value="Mostrar valor">
+               <br><br>
+               <div id="resE7b"></div>
+          </div>
+
+          <!-- PARTE C -->
+          <div>
+               <h3>Parte C</h3>
+               <label for="txtBusquedaNombreE7c">Ingrese el nombre que quiere sustituir: </label>
+               <input type="text" id="txtBusquedaNombreE7c" placeholder="...">
+               <br><br>
+               <label for="txtCambioNombreE7c">Ingrese un nombre nuevo para cambiar: </label>
+               <input type="text" id="txtCambioNombreE7c" placeholder="...">
+               <br><br>
+               <input type="button" id="btnMostrarResultadoE7c" value="Mostrar resultado">
+               <br>
+               <div id="resE7c"></div>
+          </div>
+     </div>
+
+     <br><hr><br>
+     
+     <h2>Ejercicio 8</h2>
+     <h3>Partiendo de un array que contenga los valores 1 y 1 en las primeras dos posiciones, completar el array hasta la posición 20 con los números de la sucesión de Fibonacci.</h3>
+     <div>
+          <input type="button" id="btnMostrarResultadoE8" value="Mostrar resultado">
+          <br><br>
+          <div id="resE8"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 9</h2>
+     <h3>Partiendo de un array que contenga los valores 1 y 1 en las primeras dos posiciones, completar el array con la secuencia de Fibonacci hasta que el último valor almacenado sea mayor a 1000, en ese momento se debe detener el programa.
+          <br>Recorrer y mostrar el array resultante.</h3>
+     <div>
+          <input type="button" id="btnMostrarResultadoE9" value="Mostrar resultado">
+          <br><br>
+          <div id="resE9"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 10</h2>
+     <h3>Crear una función que reciba como parámetro un array y devuelva el array, pero sin elementos repetidos.</h3>
+     <div>
+          <input type="button" id="btnMostrarResultadoE10" value="Mostrar resultado">
+          <br><br>
+          <div id="resE10"></div>
+     </div>
+     
+     <br><hr><br>
+     
+     <h2>Ejercicio 12</h2>
+     <h3>Crear una función que reciba como parámetro un array de números y devuelva un nuevo array con los elementos que sean mayores o iguales al primero.</h3>
+     <div>
+          <label for="txtNumIngresadoE12">Ingrese un numero: </label>
+          <input type="text" id="txtNumIngresadoE12" placeholder="...">
+          <br><br>
+          <input type="button" id="btnGuardarNumeroE12" value="Agregar numero">
+          <br><br>
+          <input type="button" id="btnMostrarResultadoE12" value="Mostrar resultado">
+          <br><br>
+          <div id="divArrayInicialE12"></div>
+          <br><br>
+          <div id="resE12"></div>
+     </div>
+     
+     <br><hr><br>
+     
+        
+     <script type="text/javascript" src="js/utilidades.js"></script>
+     <script type="text/javascript" src="js/miCodigo.js"></script>
+</body>
+</html>

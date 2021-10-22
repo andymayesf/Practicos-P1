@@ -1,0 +1,32 @@
+FaceBook
+
+Creado por Mark Zuckerberg y fundado junto a Eduardo Saverin, Chris Hughes y Dustin Moskovitz. Su infraestructura principal 
+está formada por una red de más de 50 000 servidores que usan distribuciones del sistema operativo GNU/Linux usando LAMP.
+
+Instagram
+
+Instagram fue creada por Kevin Systrom y Mike Krieger y fue lanzada en octubre de 2010. Esta aplicación rápidamente ganó 
+popularidad, con más de 100 millones de usuarios activos en abril de 2012 y superó los 300 millones en diciembre de 2014. 
+Instagram fue diseñada originariamente para iPhone y a su vez está disponible para sus hermanos iPad y iPod con el sistema iOS 3.0.2 o 
+superior. A principios de abril de 2012, se publicó una versión para Android, y en 2013 se lanzó la versión beta para Windows Phone y 
+oficial para Windows 10 en 2016.
+
+Pinterest
+
+Fundada por Ben Silbermann, Paul Sciarra, y Evan Sharp,3 el sitio es manejado por Cold Brew Labs y financiado por un 
+pequeño grupo de empresarios e inversores. Su nombre se deriva de la suma de las palabras en inglés: pin" e interest
+(Pin Alfiler, Tachuela, Puntilla)
+
+Twitter
+
+Desde que Jack Dorsey lo creó en marzo de 2006, y lo lanzó en julio del mismo año, la red ha ganado popularidad mundial 
+y se estima que tiene más de 500 millones de usuarios, generando 65 millones de tweets al día y maneja más de 800 000 peticiones 
+de búsqueda diarias. Ha sido denominado como el SMS de Internet.
+
+Whatsapp
+
+El 19 de febrero de 2014 la aplicación fue comprada por la empresa Facebook por 19 000 millones de dólares (de los cuales 12 000 
+millones corresponden a acciones de Facebook y el resto en efectivo).4 A principios de octubre se anuncia la compra definitiva de 
+WhatsApp por Facebook por valor de 21 800 millones de dólares.5 Algunas semanas después de la compra, Whatsapp anunció tener capacidad 
+para realizar videollamadas en el verano del mismo año.6 El despliegue definitivo del Voip llegó progresivamente durante 2015 a 
+todas las plataformas móviles.

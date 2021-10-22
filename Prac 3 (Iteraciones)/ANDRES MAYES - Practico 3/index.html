@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        
+        #divPrincipal {
+            text-align: center;
+            
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <title>Practico 3 - (Estructuras de control repetitivas)</title>
+</head>
+
+<body>
+    <div id="divPrincipal">
+        <h1>Practico 3 - (Estructuras de control repetitivas)</h1>
+        <h1>Ejercicio 1</h1>
+        <h2>Numeros del 1 al 1000 (uno por linea)</h2>
+        <div>
+            <input type="button" id="btnE1" value="Mostrar numeros">
+            <br><br>
+            <div id="resE1"></div>
+        </div>
+
+        <br><hr><br>
+
+        <h1>Ejercicio 2</h1>
+        <h2>Numeros del -100 al 10</h2>
+        <div>
+            <input type="button" id="btnE2" value="Mostrar numeros">
+            <br><br>
+            <div id="resE2"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 3</h1>
+        <h2>Numeros del 40 al 10</h2>
+        <div>
+            <input type="button" id="btnE3" value="Mostrar numeros">
+            <br><br>
+            <div id="resE3"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 4</h1>
+        <h2>Numeros del 20 al -30</h2>
+        <div>
+            <input type="button" id="btnE4" value="Mostrar numeros">
+            <br><br>
+            <div id="resE4"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 5</h1>
+        <h2>Numeros multiplos de 5 entre 1 y 450</h2>
+        <div>
+            <input type="button" id="btnE5" value="Mostrar numeros">
+            <br><br>
+            <div id="resE5"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 6</h1>
+        <h2>Numeros multiplos de 4 entre -33 y 230</h2>
+        <div>
+            <input type="button" id="btnE6" value="Mostrar numeros">
+            <br><br>
+            <div id="resE6"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 7</h1>
+        <h2>Linea de guiones</h2>
+        <div>
+            <label for="cantGuiones">Ingrese un numero entre 2 y 50: </label>
+            <input type="number" id="cantGuiones" min="2" max="50">
+            <br><br>
+            <input type="button" id="btnE7" value="Mostrar guiones">
+            <br><br>
+            <div id="resE7"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 8</h1>
+        <h2>Numeros entre bordes indicados</h2>
+        <div>
+            <label for="bordeNum1">Ingrese un numero: </label>
+            <input type="number" id="bordeNum1">
+            <br><br>
+            <label for="bordeNum2">Ingrese un numero: </label>
+            <input type="number" id="bordeNum2">
+            <br><br>
+            <input type="button" id="btnE8" value="Mostrar numeros">
+            <br><br>
+            <div id="resE8"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 9</h1>
+        <h2>Numeros entre bordes indicados</h2>
+        <div>
+            <label for="num1BordeE9">Ingrese un numero: </label>
+            <input type="number" id="num1BordeE9">
+            <br><br>
+            <label for="num2BordeE9">Ingrese un numero: </label>
+            <input type="number" id="num2BordeE9">
+            <br><br>
+            <input type="button" id="btnE9" value="Mostrar resultado">
+            <br><br>
+            <div id="resE9"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 10</h1>
+        <h2>Producto entre numeros comprendidos</h2>
+        <div>
+            <label for="num1BordeE10">Ingrese un numero: </label>
+            <input type="number" id="num1BordeE10">
+            <br><br>
+            <label for="num2BordeE10">Ingrese un numero: </label>
+            <input type="number" id="num2BordeE10">
+            <br><br>
+            <input type="button" id="btnE10" value="Mostrar resultado">
+            <br><br>
+            <div id="resE10"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 11</h1>
+        <h2>Numeros multiplos de numero ingresado entre dos numeros a eleccion</h2>
+        <div>
+            <label for="num1BordeE11">Ingrese un numero: </label>
+            <input type="number" id="num1BordeE11">
+            <br><br>
+            <label for="num2BordeE11">Ingrese un numero: </label>
+            <input type="number" id="num2BordeE11">
+            <br><br>
+            <label for="numMultiplo">Ingrese un numero: </label>
+            <input type="number" id="numMultiplo">
+            <br><br>
+            <input type="button" id="btnE11" value="Mostrar numeros">
+            <br><br>
+            <div id="resE11"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 12</h1>
+        <h2>Factorial de numero ingresado</h2>
+        <div>
+            <label for="numFactorial">Ingrese un numero: </label>
+            <input type="number" id="numFactorial">
+            <br><br>
+            <input type="button" id="btnE12" value="Mostrar numeros">
+            <br><br>
+            <div id="resE12"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 13</h1>
+        <h2>Dibujar rectangulo con cantidad de filas y columnas indicadas y simbolo indicado</h2>
+        <div>
+            <label for="cantFilas">Ingrese un numero: </label>
+            <input type="number" id="cantFilas">
+            <br><br>
+            <label for="cantColumnas">Ingrese un numero: </label>
+            <input type="number" id="cantColumnas">
+            <br><br>
+            <label for="simboloAUsar">Ingrese un simbolo de un caracter: </label>
+            <input type="text" id="simboloAUsar">
+            <br><br>
+            <input type="button" id="btnE13" value="Mostrar numeros">
+            <br><br>
+            <div id="resE13"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 14</h1>
+        <h2>Mostrar la cantidad de digitos que tiene un numero ingresado</h2>
+        <div>
+            <label for="numE14">Ingrese un numero: </label>
+            <input type="number" id="numE14">
+            <br><br>
+            <input type="button" id="btnE14" value="Mostrar numeros">
+            <br><br>
+            <div id="resE14"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 15</h1>
+        <h2>Dividir numero ingresado (mayor a 2000) entre 20 hasta que sea menor a 100 </h2>
+        <div>
+            <label for="numE15">Ingrese un numero: </label>
+            <input type="number" id="numE15">
+            <br><br>
+            <input type="button" id="btnE15" value="Mostrar resultado">
+            <br><br>
+            <div id="resE15"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 16</h1>
+        <h2>Mostrar primer numero multiplo de 4 y 6 simultaneamente entre numeros ingresado</h2>
+        <div>
+            <label for="num1E16">Ingrese un numero: </label>
+            <input type="number" id="num1E16">
+            <br><br>
+            <label for="num2E16">Ingrese un numero: </label>
+            <input type="number" id="num2E16">
+            <br><br>
+            <input type="button" id="btnE16" value="Mostrar resultado">
+            <br><br>
+            <div id="resE16"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 17</h1>
+        <h2>Hacer una division mediante restas</h2>
+        <div>
+            <label for="dividendoE17">Ingrese el numero a dividir: </label>
+            <input type="number" id="dividendoE17">
+            <br><br>
+            <label for="divisorE17">Ingrese el divisor: </label>
+            <input type="number" id="divisorE17">
+            <br><br>
+            <input type="button" id="btnE17" value="Mostrar numeros">
+            <br><br>
+            <div id="resE17"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 18</h1>
+        <h2></h2>
+        <div>
+            <label for="numDivisor">Ingrese el divisor: </label>
+            <input type="number" id="numDivisor">
+            <br><br>
+            <input type="button" id="btnE18" value="Mostrar numeros">
+            <br><br>
+            <div id="resE18"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 19</h1>
+        <h2>Armar un calendario de un mes</h2>
+        <div>
+            <label for="selMes">Seleccione un mes: </label>
+            <select id="selMes"> 
+                <option value="---">---</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setiembre">Setiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select>
+            <br><br>
+            <label for="selDia">Seleccione el dia en el cual empieza el mes: </label>
+            <select id="selDia">
+                <option value="---">---</option>
+                <option value="Lunes">Lunes</option>
+                <option value="Martes">Martes</option>
+                <option value="Miercoles">Miercoles</option>
+                <option value="Jueves">Jueves</option>
+                <option value="Viernes">Viernes</option>
+                <option value="Sabado">Sabado</option>
+                <option value="Domingo">Domingo</option>
+              </select>
+            <br><br>
+            
+            <br><br>
+            <input type="button" id="btnE19" value="Crear calendario">
+            <br><br>
+            <div id="resE19"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h1>Ejercicio 20</h1>
+        <h2></h2>
+        <div>
+            <label for="num1E20">Ingrese el numero a dividir: </label>
+            <input type="number" id="num1E20">
+            <br><br>
+            <label for="num2E20">Ingrese el divisor: </label>
+            <input type="number" id="num2E20">
+            <br><br>
+            <input type="button" id="btnE20" value="Mostrar numeros">
+            <br><br>
+            <div id="resE20"></div>
+        </div>
+        
+        <br><hr><br>
+
+    </div>
+    <script type="text/javascript" src="js/miCodigo.js"></script>
+</body>
+
+</html>

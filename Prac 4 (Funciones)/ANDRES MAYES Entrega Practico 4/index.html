@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 4 (FUNCIONES)</title>
+    <style>
+        #divContenedor {
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        input:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divContenedor">
+        <h1>Practico 4 - Funciones</h1>
+
+        <br><hr><br>
+        
+        <h2>Ejemplo</h2>
+        <div>
+            <label for="selectSexo">Sexo:</label>
+            <select id="selectSexo">
+                <option value="">Seleccione...</option>
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+            </select>
+            <br><br>
+            <input type="button" id="miBoton1" value="Ejecutar sistema">
+            <br><br>
+            <div id="divResultado"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 1</h2>
+        <h3>Ingresar dos numeros cualesquiera y ver cuantos pares hay entre ellos</h3>
+        <div>
+            <label for="txtNum1E1">Ingrese un numero: <label>
+            <input type="number" id="txtNum1E1" placeholder="...">
+            <br><br>
+            <label for="txtNum1E2">Ingrese un numero: </label>
+            <input type="number" id="txtNum1E2" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE1" value="Ejecutar sistema">
+            <br><br>
+            <div id="resE1"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 2</h2>
+        <h3>Ingresar dos numeros y ver si el primero es mayor al segundo o no</h3>
+        <div>
+            <label for="txtAniosDeEdadE2">Ingrese un numero: <label>
+            <input type="number" id="txtAniosDeEdadE2" placeholder="...">
+            <br><br>
+            <label for="txtTopeAniosDeEdadE2">Ingrese un numero: </label>
+            <input type="number" id="txtTopeAniosDeEdadE2" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE2" value="Ejecutar sistema">
+            <br><br>
+            <div id="resE2"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 3</h2>
+        <h3>Ingresar un año y ver si es bisisesto o no</h3>
+        <div>
+            <label for="txtAnioE3">Ingrese un numero: </label>
+            <input type="number" id="txtAnioE3" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE3" value="Ejecutar sistema">
+            <br><br>
+            <div id="resE3"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 4</h2>
+        <h3>Calcula el area de un triangulo si le pasamos la base y altura</h3>
+        <div>
+            <label for="baseE4">Ingrese el largo de la base: </label>
+            <input type="number" id="baseE4" placeholder="...">
+            <br><br>
+            <label for="alturaE4">Ingrese el largo de la altura: </label>
+            <input type="number" id="alturaE4" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE4" value="Calcular area">
+            <br><br>
+            <div id="resE4"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 5</h2>
+        <h3>Calcula el area de un rectangulo si le pasamos el largo de sus lados</h3>
+        <div>
+            <label for="lado1E5">Ingrese el largo de la base: </label>
+            <input type="number" id="lado1E5" placeholder="...">
+            <br><br>
+            <label for="lado2E5">Ingrese el largo de la altura: </label>
+            <input type="number" id="lado2E5" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE5" value="Calcular area">
+            <br><br>
+            <div id="resE5"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 6</h2>
+        <h3>Pasa una temperatura en Celsius(°C) a Fahrenheit(°F)</h3>
+        <div>
+            <label for="tempEnCelsiusE6">Ingrese la temperatura en Celsius: </label>
+            <input type="number" id="tempEnCelsiusE6" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE6" value="Convertir a Fahrenheit">
+            <br><br>
+            <div id="resE6"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 7</h2>
+        <h3>Pasa una temperatura en Fahrenheit(°F) a una unidad elegida</h3>
+        <div>
+            <label for="tempFahrenheitE7">Ingrese la temperatura en Fahrenheit: </label>
+            <input type="number" id="tempFahrenheitE7" placeholder="...">
+            <br><br>
+            <label for="selUnidad">Ingrese la unidad a la que quiera convertir la temperatura: </label>
+            <select id="selUnidad">
+                <option value="-">¿Unidad?</option>
+                <option value="C">Celsius</option>
+                <option value="K">Kelvin</option>
+                <option value="Ra">Rankine</option>
+                <option value="Re">Réamur</option>
+            </select>
+            <br><br>
+            <input type="button" id="btnE7" value="Convertir">
+            <br><br>
+            <div id="resE7"></div>
+        </div>
+        
+        <br><hr><br>
+        
+        <h2>Ejercicio 8</h2>
+        <h3>Le pasas la base y el exponente y le calcula la potencia</h3>
+        <div>
+            <label for="baseE8">Ingrese la base: </label>
+            <input type="number" id="baseE8" placeholder="...">
+            <br><br>
+            <label for="exponenteE8">Ingrese el exponente: </label>
+            <input type="number" id="exponenteE8" placeholder="...">
+            <br><br>
+            <input type="button" id="btnE8" value="Convertir a Fahrenheit">
+            <br><br>
+            <div id="resE8"></div>
+        </div>
+        
+        <br><hr><br>
+
+        <h2>Ejercicio 9</h2>
+        <div>
+            <h3>Arma el presupuesto segun la cantidad de dias que trabajo el electricista, cantidad de horas por dia, si necesito de un asistente y el costo de los materiales de la obra</h3>
+            <label for="txtCantidadDiasE9">Dias trabajados: </label>    
+            <input id="txtCantidadDiasE9" type="text" placeholder="...">
+            <br><br>
+            <label for="txtCantidadHorasE9">Horas trabajadas: </label>
+            <input id="txtCantidadHorasE9" type="text" placeholder="...">
+            <br><br>
+            <label for="txtCostoMaterialesE9">Costo de materiales: </label>
+            <input id="txtCostoMaterialesE9" type="text" placeholder="...">
+            <br><br>
+            <select id="selectAsistenteE9">
+                <option value="">¿Utiliza asistente?</option>
+                <option value="S">Sí</option>
+                <option value="N">No</option>
+            </select>
+            <br><br>
+            <input id="btnE9" type="button" value="Calcular presupuesto">
+            <br><br>
+            <div id="resE9"></div>
+        </div>
+        
+        <script type="text/javascript" src="js/miCodigo.js"></script>
+    </div>
+</body>
+
+
+</html>

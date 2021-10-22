@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <link rel="icon" href="data:,">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+    body {
+      text-align: center;
+      font-family: 'Urbanist', sans-serif;
+    }
+
+    #txtMillasE14 {
+      width: 20%;
+    }
+
+    #ej28 #colSeparador {
+      margin: 0 0 0 0;
+    }
+
+    #ej28 #primerCol {
+      margin-bottom: 0;
+    }
+
+    #ej28 #ptsJugadores{
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Práctico 2</h1>
+  <h2>Ejercicio 1</h2>
+  <div>
+    <label for="txtE1">Ingrese un número</label>
+    <input type="number" id="txtE1">
+    <br><br>
+    <input type="button" id="btnE1" value="Mostrar resultado">
+    <br><br>
+    <div id="divResultadoE1"></div>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 2</h2>
+  <div>
+    <label for="txtE2">Ingrese un numero</label>
+    <input type="number" id="txtE2">
+    <br><br>
+    <input type="button" id="btnE2" value="Mostrar resultado">
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 3</h2>
+  <div>
+    <label for="txtE3">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE3">
+    <br><br>
+    <input type="button" id="btnE3" value="Mostrar resultado">
+    <p id="resE3"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 4</h2>
+  <div>
+    <label for="txtE4">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE4">
+    <br><br>
+    <input type="button" id="btnE4" value="Imprimir valor">
+    <br><br>
+    <p id="resE4"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 5</h2>
+  <div>
+    <label for="txtE5">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE5">
+    <br><br>
+    <input type="button" id="btnE5" value="Mostrar resultado">
+    <br><br>
+    <p id="resE5"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 6</h2>
+  <div>
+    <label for="txtE6">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE6">
+    <br><br>
+    <input type="button" id="btnE6" value="Mostrar resultado">
+    <br><br>
+    <p id="resE6"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 7</h2>
+  <div>
+    <label for="txtE7">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE7">
+    <br><br>
+    <input type="button" id="btnE7" value="Mostrar resultado">
+    <br><br>
+    <p id="resE7"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 8</h2>
+  <div>
+    <label for="txtE8">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE8">
+    <br><br>
+    <input type="button" id="btnE8" value="Mostrar resultado">
+    <br><br>
+    <p id="resE8"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 9</h2>
+  <div>
+    <label for="selDia">Ingrese el dia de la semana:</label>
+    <select name="diaSemana" id="selDia">
+      <option value="Lunes">Lunes</option>
+      <option value="Martes">Martes</option>
+      <option value="Miercoles">Miercoles</option>
+      <option value="Jueves">Jueves</option>
+      <option value="Viernes">Viernes</option>
+      <option value="Sabado">Sabado</option>
+      <option value="Domingo">Domingo</option>
+    </select>
+
+    <br><br>
+
+    <label for="txtTemperatura">Ingrese la temperatura actual: </label>
+    <input type="number" placeholder="..." id="txtTemperatura">
+    <br><br>
+    <input type="button" id="btnE9" value="Mostrar resultado">
+    <br><br>
+    <p id="resE9"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 10</h2>
+  <div>
+    <label for="num1E10">Ingrese un numero:</label>
+    <input type="number" placeholder="Ingrese un numero..." id="num1E10">
+    <br><br>
+    <label for="num2E10">Ingrese un numero:</label>
+    <input type="number" placeholder="Ingrese un numero..." id="num2E10">
+    <br><br>
+    <input type="button" id="btnE10" value="Mostrar resultado">
+    <br><br>
+    <p id="resE10"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 11</h2>
+  <div>
+    <label for="num1E11">Ingrese un numero:</label>
+    <input type="number" placeholder="..." id="num1E11">
+    <br><br>
+    <label for="num2E11">Ingrese un numero:</label>
+    <input type="number" placeholder="..." id="num2E11">
+    <br><br>
+    <select name="operacion" id="operacionMatematica">
+      <option value="suma">S</option>
+      <option value="resta">R</option>
+      <option value="multiplicacion">M</option>
+      <option value="division">D</option>
+    </select>
+    <br><br>
+    <input type="button" id="btnE11" value="Mostrar resultado">
+    <br><br>
+    <p id="resE11"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 12</h2>
+  <div>
+    <label for="txtLetra">Ingrese una letra: </label>
+    <input type="text" id="txtLetra" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE12" value="Mostrar resultado">
+    <br><br>
+    <p id="resE12"></p>
+
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 13</h2>
+  <div>
+    <p>Ingresar dos numeros para ver si el primero es multiplo del segundo</p>
+    <label for="num1E13"></label>
+    <input type="number" placeholder="Ingrese un numero..." id="num1E13">
+    <label for="num2E13"></label>
+    <input type="number" placeholder="Ingrese un numero..." id="num2E13">
+    <br><br>
+    <input type="button" id="btnE13" value="Mostrar resultado">
+    <p id="resE13"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 14</h2>
+  <div>
+    <label for="esPlanPlus">¿Es parte del Plan Plus?</label>
+    <select id="selectPlanPlusE14">
+      <option value="-">---</option>
+      <option value="Si">Si</option>
+      <option value="No">No</option>
+    </select>
+
+    <br><br>
+
+    <label for="txtMillasE14">¿Cuantas millas tiene?</label>
+    <input type="number" id="txtMillasE14" placeholder="Ingrese la cantidad de millas...">
+    <br><br>
+    <input type="button" id="btnE14" value="Ver mi posible canje">
+    <br><br>
+    <p id="resE14"></p>
+  </div>
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 15</h2>
+  <div>
+    <label for="txtDepartamento">Elija una opcion</label>
+    <select name="depto" id="txtDepartamento">
+      <option value="-">---</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="H">H</option>
+      <option value="I">I</option>
+      <option value="J">J</option>
+      <option value="K">K</option>
+      <option value="L">L</option>
+      <option value="M">M</option>
+      <option value="N">N</option>
+      <option value="O">O</option>
+      <option value="P">P</option>
+      <option value="Q">Q</option>
+      <option value="R">R</option>
+      <option value="S">S</option>
+    </select>
+    <br><br>
+    <input type="button" id="btnE15" value="Mostrar resultado">
+    <br><br>
+    <p id="resE15"></p>
+  </div>
+
+
+  <br>
+  <hr><br>
+
+  <h2>Ejercicio 16</h2>
+  <div>
+    <p>Ingrese 3 numeros y vea si el primero es mas grande que los demas.</p>
+    <label for="num1E16">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="num1E16">
+    <br><br>
+    <label for="num2E16">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="num2E16">
+    <br><br>
+    <label for="num3E16">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="num3E16">
+    <br><br>
+    <br><br>
+    <input type="button" id="btnE16" value="Mostrar resultado">
+    <br><br>
+    <p id="resE16"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 17</h2>
+  <div>
+    <p>Ingrese 2 numeros y vea si esta dentro o fuera del rango (0-10).</p>
+    <label for="txtE17">Ingrese un numero: </label>
+    <input type="number" placeholder="..." id="txtE17">
+    <br><br>
+    <input type="button" id="btnE17" value="Mostrar resultado">
+    <br><br>
+    <p id="resE17"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 18</h2>
+  <div>
+    <label for="txtE18">Ingrese un numero: </label>
+    <input type="number" id="txtE18" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE18" value="Mostrar resultado">
+    <br><br>
+    <p id="resE18"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 19</h2>
+  <div>
+    <label for="txtE19">Ingrese un numero: </label>
+    <input type="number" id="txtE19" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE19" value="Mostrar resultado">
+    <br><br>
+    <p id="resE19"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 20</h2>
+  <div>
+    <label for="txtAguaE20">Ingrese la cantidad de tazas de agua disponibles: </label>
+    <input type="number" id="txtAguaE20" placeholder="...">
+    <br><br>
+    <label for="txtAzucarE20">Ingrese la cantidad de tazas de azucar disponibles: </label>
+    <input type="number" id="txtAzucarE20" placeholder="...">
+    <br><br>
+    <label for="txtHarinaE20">Ingrese la cantidad de harina en gramos disponibles: </label>
+    <input type="number" id="txtHarinaE20" placeholder="...">
+    <br><br>
+    <label for="txtAceiteE20">Ingrese la cantidad de cucharadas de aceite disponibles: </label>
+    <input type="number" id="txtAceiteE20" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE20" value="Calcular recetas">
+    <br><br>
+    <p>Con los ingredientes que tiene puede hacer la siguiente cantidad de recetas de galletas</p>
+    <p id="resE20"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 21</h2>
+  <div>
+    <label for="txtIngresoE21">Ingrese los ingresos mensuales: </label>
+    <input type="number" id="txtIngresoE21" placeholder="...">
+    <br><br>
+    <label for="txtCasaE21">Ingrese el costo de la casa: </label>
+    <input type="number" id="txtCasaE21" placeholder="...">
+    <br><br>
+    <input type="button" value="Ver resultado" id="btnE21">
+    <br><br>
+    <p id="resE21"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 22</h2>
+  <div>
+    <label for="txtIngresoE22">Ingrese el costo total de la compra: </label>
+    <input type="number" id="txtIngresoE22" placeholder="...">
+    <br><br>
+    <select name="usaTarjeta" id="selUsaTarjeta">
+      <option value="si">Si</option>
+      <option value="no">No</option>
+    </select>
+    <br><br>
+    <input type="button" id="btnE22" value="Calcular precio final de la compra">
+    <br><br>
+    <p id="resE22"></p>
+  </div>
+
+  <br><hr><br>
+
+  <div>
+    <h2>Ejercicio 23</h2>
+    <label for="txtE23">Ingrese una nota: </label>
+    <input type="number" id="txtE23">
+    <br><br>
+    <input type="button" id="btnE23" value="Guardar y mostrar estadísticas">
+    <br><br>
+    <div id="divResultadoE23"></div>
+  </div>
+  
+  <br>
+  <hr><br>
+  
+  <h2>Ejercicio</h2>
+  <div>
+
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 25</h2>
+  <div>
+    <label for="cantCamaras">Ingrese el numero de stock de camaras: </label>
+    <input type="number" id="cantCamaras" placeholder="...">
+    <br><br>
+    <input type="button" id="btnDefStock" value="Definir el Stock disponible">
+    <br><br>
+    <label for="nombreCliente">Ingrese su nombre: </label>
+    <input type="text" id="nombreCliente" placeholder="...">
+    <br><br>
+    <label for="camarasPedidasCliente">¿Cuantas camaras desea comprar?</label>
+    <input type="number" id="camarasPedidasCliente" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE25" value="Consultar si hay stock suficiente">
+    <br><br>
+    <p id="cantPedidos"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 26</h2>
+  <div>
+    <label for="txtDiasHospedados">Ingrese el numero de dias que se va a quedar: </label>
+    <input type="number" id="txtDiasHospedados" placeholder="...">
+    <br><br>
+    <select name="Forma de pago" id="selFormaDePago">
+      <option value="efectivo">Efectivo</option>
+      <option value="tarjeta">Tarjeta</option>
+    </select>
+    <br><br>
+    <input type="button" id="btnE26" value="Mostrar resultado">
+    <br><br>
+    <p id="resE26"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 27</h2>
+  <div>
+    <label for="txtNumSecreto">Jugador Nro. 1: Ingrese el numero secreto: </label>
+    <input type="number" id="txtNumSecreto" placeholder="...">
+    <br><br>
+    <label for="txtIntento">Jugador Nro. 2: Haga el intento y presione el boton: </label>
+    <input type="number" id="txtIntento" placeholder="...">
+    <br><br>
+    <input type="button" id="btnE27" value="Mostrar resultado">
+    <br><br>
+    <p id="resE27"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio 28</h2>
+  <div id="ej28">
+    <input type="button" id="btnJ1" value="1 Punto (Jugador 1)">
+    <input type="button" id="btnJ2" value="1 Punto (Jugador 2)">
+    <br>
+    <p id="ptsJugadores"></p>
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio</h2>
+  <div>
+
+  </div>
+
+  <br><hr><br>
+
+  <h2>Ejercicio</h2>
+  <div>
+
+  </div>
+
+  <br><hr><br>
+
+  <script type="text/javascript" src="js/miCodigoPr2.js"></script>
+</body>
+
+</html>
