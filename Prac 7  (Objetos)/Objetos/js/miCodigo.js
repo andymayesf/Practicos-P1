@@ -2,17 +2,28 @@ let personas = [];
 let peliculas = [];
 let guitarras = [];
 let ventasGuitarras = [];
+let proximoGeneroId = 1;
+let numeroDeIDMarca = 1;
+let marcasCelulares = []
+let ventasCelulares = [];
 
 inicializar();
 
 function inicializar() {
     agregarEventosDeClick();
     precargarDatos();
+    completarHTML();
 }
 
 function precargarDatos() {
     precargarPeliculas();
     precargarTiposGuitarras();
+    precargaDeMarcasCelulares();
+    precargaVentaCelulares();
+}
+
+function completarHTML() {
+    completarSelectMarcasCelulares();
 }
 
 function agregarEventosDeClick() {
@@ -24,6 +35,8 @@ function agregarEventosDeClick() {
     document.querySelector("#btnMostrarPeliculaPorNombre").addEventListener("click", btnMostrarPeliculaElegidaE2dHandler);
     document.querySelector("#btnIngresarCompraE3").addEventListener("click", btnRegistrarCompraE3AHandler);
     document.querySelector("#btnMostrarIngresos").addEventListener("click", btnArmarTablaDeVentasE3CHandler);
+    document.querySelector("#btnRegistroCompraCelE4bHandler").addEventListener("click", btnAltaCompraCelE4bHandler);
+    document.querySelector("#btnMostrarVentasMasGrandesE4cHandler").addEventListener("click", mostrarVentasCelsMasGrandes);
 }
 
 function precargarPeliculas() {
@@ -31,9 +44,9 @@ function precargarPeliculas() {
 }
 
 function precargarTiposGuitarras() {
-    guitarras.push(new Guitarra (1, "clásica", 2000));
-    guitarras.push(new Guitarra (2, "eléctrica", 2500));
-    guitarras.push(new Guitarra (3, "electroacustica", 2300));
+    guitarras.push(new Guitarra(1, "clásica", 2000));
+    guitarras.push(new Guitarra(2, "eléctrica", 2500));
+    guitarras.push(new Guitarra(3, "electroacustica", 2300));
 }
 
 //EJERCICIO 1
@@ -207,7 +220,7 @@ function armarTablaPeliculasMejorValuadas() {
         let peliculaActual = peliculas[i]
         let promedioValoraciones = peliculaActual.calcularPromedio()
         if (promedioValoraciones >= 4) {
-            tabla +=    `<tbody>
+            tabla += `<tbody>
                             <tr>
                                 <td>${peliculaActual.nombre}</td>
                                 <td>${peliculaActual.anio}</td>
@@ -297,7 +310,7 @@ function btnRegistrarCompraE3AHandler() {
         let tipoNumerico = parseInt(tipo);
 
         if (cantCompradasNumerico > 0 && (tipoNumerico == 1 || tipoNumerico == 2 || tipoNumerico == 3)) {
-            ventasGuitarras.push(new Venta(tipoNumerico, cantCompradasNumerico));
+            ventasGuitarras.push(new VentaGuitarra(tipoNumerico, cantCompradasNumerico));
         } else {
             if (cantCompradasNumerico <= 0) {
                 resultado = "La cantidad ingresada debe ser mayor a 0.<br>"
@@ -314,13 +327,13 @@ function btnRegistrarCompraE3AHandler() {
 function obtenerTipoGuitarra(tipoGuitarraNumerico) {
     let tipoGuitarra
     if (tipoGuitarraNumerico == "1") {
-         tipoGuitarra = "Clasica"
+        tipoGuitarra = "Clasica"
     } else if (tipoGuitarraNumerico == "2") {
-         tipoGuitarra = "Electrica"
+        tipoGuitarra = "Electrica"
     } else if (tipoGuitarraNumerico == "3") {
-         tipoGuitarra = "Electroacustica"
+        tipoGuitarra = "Electroacustica"
     } else if (tipoGuitarraNumerico == "") {
-         tipoGuitarra = null
+        tipoGuitarra = null
     }
 
     return tipoGuitarra
@@ -333,7 +346,7 @@ function calcularIngresosPorTipoGuitarra(tipoGuitarra) {
         let ventaGuitarraActual = ventasGuitarras[i]
 
         if (tipoGuitarra == ventaGuitarraActual.tipo) {
-            let montoPorGuitarra = guitarras[tipoGuitarra-1].precio;
+            let montoPorGuitarra = guitarras[tipoGuitarra - 1].precio;
             let cantVentaActual = ventaGuitarraActual.cantidad;
             ingresos += montoPorGuitarra * cantVentaActual;
         }
@@ -381,3 +394,166 @@ function armarTablaDeVentas(array) {
 
     return tabla
 }
+
+// class VentaCelular {
+//     constructor (pMarca, pModelo, pPrecio, pCantUnidades) {
+//          this.marca = pMarca;
+//          this.modelo = pModelo;
+//          this.precio = pPrecio;
+//          this.cantUnidades = pCantUnidades;
+//     }
+// }
+
+
+
+
+
+//Ejercicio 4
+function precargaDeMarcasCelulares() {
+    marcasCelulares.push(new MarcaCel("Samsung"))
+    marcasCelulares.push(new MarcaCel("Sony"))
+    marcasCelulares.push(new MarcaCel("LG"))
+}
+
+function precargaVentaCelulares() {
+    ventasCelulares.push(new VentaCelular(1, "Galaxy S Note 10", 1500, 2));
+    ventasCelulares.push(new VentaCelular(2, "Xperia Xz", 1000, 1));
+    ventasCelulares.push(new VentaCelular(3, "W41 Pro", 800, 3));
+}
+
+function completarSelectMarcasCelulares() {
+    let marcasCelsParaHTML = `<option disabled selected value="">Seleccione..</option>`;
+
+    for (let i = 0; i < marcasCelulares.length; i++) {
+        let marcaActual = marcasCelulares[i];
+        marcasCelsParaHTML += `<option value="${marcaActual.id}">${marcaActual.nombre}</option>`;
+    }
+
+    mostrarEnHTML("selectAltaMarcaVentaCelular", marcasCelsParaHTML);
+}
+
+function crearYGuardarCompraCelularValida(marca, modelo, precioCelular, cantUnidadesCompradas) {
+    let errores = validarDatosVentaCel(marca, modelo, precioCelular, cantUnidadesCompradas);
+    if (errores.length === 0) {
+        ventasCelulares.push(new VentaCelular(marca, modelo, precioCelular, cantUnidadesCompradas));
+    }
+    return errores;
+}
+
+function btnAltaCompraCelE4bHandler() {
+    let mensaje = '';
+
+    let marcaSeleccionada = leerDatoDelHTML("selectAltaMarcaVentaCelular");
+    let modeloIngresado = leerDatoDelHTML("ingresoModeloVentaCel");
+    let precioIngresado = leerDatoDelHTML("ingresoPrecioVentaCel");
+    let cantUnidadesCompradas = leerDatoDelHTML("ingresoCantUnidadesDeCompraCel");
+
+    let precioIngresadoNumerico = parseInt(precioIngresado);
+    let cantUnidadesCompradasNumerico = parseInt(cantUnidadesCompradas);
+
+    mensaje = crearYGuardarCompraCelularValida(marcaSeleccionada, modeloIngresado, precioIngresadoNumerico, cantUnidadesCompradasNumerico);
+
+    if (mensaje.length === 0) {
+        mensaje = "Venta guardada."
+    }
+
+    mostrarEnHTML("divMensajesAltaCompraCelular", mensaje);
+}
+
+function validarDatosVentaCel(marca, modelo, precioCelular, cantUnidadesCompradas) {
+    let mensaje = "";
+
+    if (marca && modelo && precioCelular && cantUnidadesCompradas) {
+        if (esNumero(precioCelular) && esNumero(cantUnidadesCompradas)) {
+            if (precioCelular <= 0 || cantUnidadesCompradas <= 0) {
+                mensaje = "El precio y la cantidad de unidades compradas deben ser mayores a cero.";
+            }
+        } else {
+            mensaje = "El precio y la cantidad de unidades compradas deben ser números.";
+        }
+
+        if (!obtenerMarcaPorId(marca)) {
+            if (mensaje.length > 0) {
+                mensaje += "<br>";
+            }
+            mensaje = "La marca seleccionada no es válida.";
+        }
+
+    } else {
+        mensaje = "Todos los datos son obligatorios.";
+    }
+
+    return mensaje;
+}
+
+function obtenerMarcaPorId(idMarcaCel) {
+    let marcaEncontrada = null;
+    let i = 0;
+    while (!marcaEncontrada && i < marcasCelulares.length) {
+        let marcaActual = marcasCelulares[i];
+        if (marcaActual.id === parseInt(idMarcaCel)) {
+            marcaEncontrada = marcaActual;
+        }
+        i++;
+    }
+    return marcaEncontrada;
+}
+
+function mostrarVentasCelsMasGrandes() {
+    let ventasCelsParaMostrarEnHTML = "";
+
+    if (ventasCelulares.length > 0) {
+        let bodyParaMostrarEnHTML = armarBodyTablaVentas()
+
+        if (bodyParaMostrarEnHTML) {
+
+            ventasCelsParaMostrarEnHTML = `<h2>Ventas mas grandes (monto mayor a 2000)</h2>
+            <br><br>
+            <table border="1">
+            <thead>
+            <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Precio unidad</th>
+            <th>Unidades compradas</th>
+            </tr>
+            </thead>
+            <tbody>
+            ` + bodyParaMostrarEnHTML + `
+                </tbody>
+                </table>
+                `;
+        } else {
+            ventasCelsParaMostrarEnHTML = "<br> No hay compras mayores a 2000"
+        }
+    } else {
+        ventasCelsParaMostrarEnHTML = "<br> No existen películas guardadas";
+    }
+
+    mostrarEnHTML("divTablaVentasMasGrandes", ventasCelsParaMostrarEnHTML)
+}
+
+function armarBodyTablaVentas() {
+    let bodyParaMostrar = "";
+
+    for (let i = 0; i < ventasCelulares.length; i++) {
+        let ventaCelActual = ventasCelulares[i];
+        if (obtenerPrecioTotal(ventaCelActual) > 2000) {
+            bodyParaMostrar += `
+                <tr>
+                    <td>${ventaCelActual.marca}</td>
+                    <td>${ventaCelActual.modelo}</td>
+                    <td>${ventaCelActual.precio}</td>
+                    <td>${ventaCelActual.cantUnidades}</td>
+                </tr>
+            `;
+        }
+    }
+
+    return bodyParaMostrar
+}
+
+function obtenerPrecioTotal(ventaCel) {
+    return ventaCel.precio * ventaCel.cantUnidades
+}
+
