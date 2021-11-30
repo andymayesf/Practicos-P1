@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integración de template para Obligatorio</title>
+    <link rel="stylesheet" href="css/misEstilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+
+        <div id="cabezal" class="clearfix">
+            <img id="logo" src="https://p1.develotion.com/2021_08/truck.png" alt="logo">
+            <ul id="navPrincipal">
+                <li id="btnMenuLogin">
+                    <a>Login</a>
+                </li>
+                <li id="btnMenuRegistroUsuario">
+                    <a>Registro</a>
+                </li>
+                <li id="btnMenuCerrarSesion">
+                    <a>Cerrar sesión</a>
+                </li>
+            </ul>
+            <!--<div id="aux">
+                <a>Menú alt. 1</a> | <a>Menú alt. 2</a>
+            </div>-->
+            <!-- FIN AUX -->
+        </div><!-- FIN CABEZAL -->
+
+        <div id="contenido">
+            <!--<h3>Contenido</h3>
+            <label for="txtPrueba">Campo:</label>
+            <input type="text" id="txtPrueba"><br>
+            <label for="txtComentarios">Campo:</label>
+            <textarea></textarea><br>
+            <input type="button" value="Algo"><br>
+
+            <hr>-->
+            <!--<div class="interior">
+                <div>
+                    <h2>Contenido 1</h2>
+                    <img src="https://p1.develotion.com/2021_08/paq1.png">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor
+                        mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis,
+                        dignissim augue.</p>
+                    <input type="button" value="Ejecutar acción">
+                </div>
+                <hr>
+                <div>
+                    <h2>Contenido 2</h2>
+                    <img src="https://p1.develotion.com/2021_08/paq2.png">
+                    <p>Donec dapibus arcu a diam commodo, vel vehicula orci volutpat. Vestibulum convallis tempor
+                        mattis. Donec molestie semper leo vel luctus. Curabitur quis nisi maximus, luctus lorem quis,
+                        dignissim augue.</p>
+                    <input type="button" value="Ejecutar acción">
+                </div>
+            </div>-->
+
+            <div id="pantallaLogin" class="interior">
+                <h2>Login</h2>
+                <label for="txtLoginUsuario">Usuario: </label>
+                <input id="txtLoginUsuario" type="text">
+                <br><br>
+                <label for="txtLoginPassword">Password: </label>
+                <input id="txtLoginPassword" type="password">
+                <br><br>
+                <input id="btnLoginIngresar" type="button" value="Ingresar">
+                <br><br>
+                <div id="divLoginMensajes"></div>
+            </div>
+
+            <div id="pantallaGestionUsuarios" class="interior">
+                <h2>Gestión de usuarios</h2>
+                <h3>Lita de usuarios</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nickname</th>
+                            <th>Sexo</th>
+                            <th>Foto</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaUsuarios"></tbody>
+                </table>
+            </div>
+
+            <div id="pantallaRegistroUsuario" class="interior">
+                <h2>Nuevo usuario</h2>
+                <label for="txtRegistroUsuarioUsuario">Usuario: (*)</label>
+                <input id="txtRegistroUsuarioUsuario" type="text">
+                <br><br>
+                <label for="txtRegistroUsuarioPassword">Password: (*)</label>
+                <input id="txtRegistroUsuarioPassword" type="password">
+                <br><br>
+                <label for="selectRegistroUsuarioSexo">Sexo: </label>
+                <select id="selectRegistroUsuarioSexo">
+                    <option value="">Seleccione...</option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>
+                <br><br>
+                <label for="fileRegistroUsuarioFoto">Foto: </label>
+                <input id="fileRegistroUsuarioFoto" type="file">
+                <br><br>
+                <input id="btnRegistroUsuarioIngresar" type="button" value="Registrar">
+                <br><br>
+                <div id="divRegistroUsuarioMensajes"></div>
+            </div>
+
+            <!--FIN EJERCICIOS-->
+        </div><!-- FIN CONTENIDO -->
+        <div id="pie">
+            <a href="https://www.ort.edu.uy">Footer</a>
+        </div><!-- FIN PIE -->
+    </div><!-- FIN CONTENEDOR -->
+
+    <script type="text/javascript" src="js/clases.js"></script>
+    <script type="text/javascript" src="js/miCodigo.js"></script>
+</body>
+
+</html>

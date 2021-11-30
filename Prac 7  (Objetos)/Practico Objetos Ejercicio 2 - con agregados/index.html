@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<link rel="icon" href="data:,">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Práctico Objetos - Ejercicio 2</title>
+    </head>
+    <body>
+        <h1>Aplicación para un cine</h1>
+        <div>
+            <h2>Alta de película</h2>
+            <label for="txtAltaPeliculaNombre">Nombre: </label>
+            <input id="txtAltaPeliculaNombre" type="text">
+            <br><br>
+            <label for="txtAltaPeliculaAnio">Año: </label>
+            <input id="txtAltaPeliculaAnio" type="number">
+            <br><br>
+            <label for="selectAltaPeliculaGenero">Género: </label>
+            <select id="selectAltaPeliculaGenero"></select>
+            <br><br>
+            <label for="txtAltaPeliculaCantidadVotantes">Cantidad de votantes: </label>
+            <input id="txtAltaPeliculaCantidadVotantes" type="number">
+            <br><br>
+            <label for="txtAltaPeliculaTotalPuntos">Total de puntos: </label>
+            <input id="txtAltaPeliculaTotalPuntos" type="number">
+            <br><br>
+            <input id="btnAltaPelicula" type="button" value="Guardar película">
+            <br><br>
+            <div id="divMensajesAltaPelicula"></div>
+        </div>
+
+        <div>
+            <h2>Listado de películas</h2>
+            <input id="btnListarPeliculas" type="button" value="Mostrar películas">
+            <br><br>
+            <div id="contenedorTablaPeliculas"></div>
+        </div>
+
+        <div>
+            <h2>Búsqueda de película</h2>
+            <label for="txtBusquedaPeliculaNombre">Nombre: </label>
+            <input id="txtBusquedaPeliculaNombre" type="text">
+            <br><br>
+            <input id="btnBuscarPelicula" type="button" value="Buscar">
+            <div id="contenedorInfoPelicula"></div>
+        </div>
+
+        <script type="text/javascript" src="js/Genero.js"></script>
+        <script type="text/javascript" src="js/Pelicula.js"></script>
+        <script type="text/javascript" src="js/utilidades.js"></script>
+        <script type="text/javascript" src="js/miCodigo.js"></script>
+    </body>
+</html>
+
